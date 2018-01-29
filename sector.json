@@ -1,0 +1,32 @@
+{
+    "fields": [
+        {
+            "name": "sector",
+            "type": "string"
+        },
+        {
+            "name": "parish_id",
+            "type": "integer#unsigned"
+        }
+    ],
+    "foreign_keys": [
+        {
+            "column": "parish_id",
+            "references": "id",
+            "on": "parishes",
+            "onDelete": "cascade"
+        }
+    ],
+    "relationships": [
+        {
+            "name": "person",
+            "type": "hasMany",
+            "class": "App\\Person"
+        },
+        {
+            "name": "parishe",
+            "type": "belongsTo",
+            "class": "App\\Parishe"
+        }
+    ]
+}

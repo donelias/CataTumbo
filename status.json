@@ -1,0 +1,20 @@
+{
+    "fields": [
+        {
+            "name": "statu",
+            "type": "string"
+        }
+    ],
+    "relationships": [
+        {
+            "name": "user",
+            "type": "hasMany",
+            "class": "App\\User"
+        },
+        {
+            "name": "person",
+            "type": "hasMany",
+            "class": "App\\Person"
+        }
+    ]
+}

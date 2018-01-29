@@ -1,0 +1,15 @@
+{
+    "fields": [
+        {
+            "name": "type_person",
+            "type": "string"
+        }
+    ],
+    "relationships": [
+        {
+            "name": "person",
+            "type": "hasMany",
+            "class": "App\\Person"
+        }
+    ]
+}
